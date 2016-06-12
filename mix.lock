@@ -1,0 +1,7 @@
+%{"bunt": {:hex, :bunt, "0.1.6", "5d95a6882f73f3b9969fdfd1953798046664e6f77ec4e486e6fafc7caad97c6f", [:mix], []},
+  "credo": {:hex, :credo, "0.4.3", "29fe87aa2ef3c19bf8dd909594b9b79d9e2ed2857a153c00eb3f697f41cb6782", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
+  "csvlixir": {:hex, :csvlixir, "2.0.3", "297f4217726ef7f0645bd9b3883cdbd6193ac8fe964aeea8eeb4b3406acc46ac", [:mix], []},
+  "exconstructor": {:hex, :exconstructor, "1.0.2", "46c60fa258d3893c2c7d0d45f80b9c830919c38eea2a19c61acaf17f0851b902", [:mix], []},
+  "httpotion": {:hex, :httpotion, "2.2.2", "f1ce1a06f6a12ee195d9b2c458c3239efc8046f2b8247e708606cad5a3f2c7d8", [:mix], [{:ibrowse, "~> 4.2", [hex: :ibrowse, optional: false]}]},
+  "ibrowse": {:hex, :ibrowse, "4.2.2", "b32b5bafcc77b7277eff030ed32e1acc3f610c64e9f6aea19822abcadf681b4b", [:rebar3], []},
+  "poison": {:hex, :poison, "2.1.0", "f583218ced822675e484648fa26c933d621373f01c6c76bd00005d7bd4b82e27", [:mix], []}}

@@ -1,0 +1,6 @@
+properties
+_build
+.#*
+deps
+*.jl
+.env
