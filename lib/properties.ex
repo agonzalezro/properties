@@ -23,7 +23,7 @@ defmodule Properties do
 
   # TODO: make it inline
   def filter_by_commute(property) do
-    time = Map.get(property, :commute_time)
+    time = property.commute_time
     time > 0 && time < Application.get_env(:properties, :max_commute_time)
   end
 
