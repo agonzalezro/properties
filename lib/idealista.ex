@@ -21,7 +21,7 @@ defmodule Property do
   use ExConstructor
 
   def has_garage(p) do
-    p.parkingSpace["hasParkingSpace"] && p.parkingSpace["isParkingSpaceIncludedInPrice"]
+    p.parkingSpace.hasParkingSpace && p.parkingSpace.isParkingSpaceIncludedInPrice
   end
 end
 
