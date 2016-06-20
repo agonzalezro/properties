@@ -1,9 +1,4 @@
-defmodule Google do
-
-  @moduledoc "Module to interact with Google Directions API."
-
-  @url "https://maps.googleapis.com/maps/api/directions/json"
-
+defmodule Google.RealClient do
   def params(destination) do
     %{
       origin: Application.get_env(:properties, :origin),
@@ -14,10 +9,28 @@ defmodule Google do
     }
   end
 
+  def directions_to(destination) do
+    HTTPotion.get("#{@url}?#{URI.encode_query params destination}").body
+  end
+end
+
+defmodule Google.TestClient do
+  def directions_to(destination) do
+    File.read! "test/fixtures/google_directions_200.json"
+  end
+end
+
+defmodule Google do
+  @client Application.get_env :properties, :client
+
+  @moduledoc "Module to interact with Google Directions API."
+
+  @url "https://maps.googleapis.com/maps/api/directions/json"
+
   def commute_time(latitude, longitude) do
     destination = "#{latitude},#{longitude}"
 
-    route = HTTPotion.get("#{@url}?#{URI.encode_query params destination}").body
+    route = @client.directions_to(destination)
     |> Poison.decode!
     |> Map.get("routes") |> List.first
 

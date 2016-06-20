@@ -1,0 +1,475 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "EjJDYWxsZSBEw7pyY2FsLCA4LTEwLCAyODA0MSBNYWRyaWQsIE1hZHJpZCwgRXNwYcOxYQ",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJq8AFI-MoQg0RKhNNNvwMsTk",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 40.4516071,
+               "lng" : -3.6903752
+            },
+            "southwest" : {
+               "lat" : 40.3684091,
+               "lng" : -3.7111998
+            }
+         },
+         "copyrights" : "Map data ©2016 Google, Inst. Geogr. Nacional",
+         "legs" : [
+            {
+               "arrival_time" : {
+                  "text" : "4:23pm",
+                  "time_zone" : "Europe/Madrid",
+                  "value" : 1466173424
+               },
+               "departure_time" : {
+                  "text" : "3:32pm",
+                  "time_zone" : "Europe/Madrid",
+                  "value" : 1466170347
+               },
+               "distance" : {
+                  "text" : "12.4 km",
+                  "value" : 12359
+               },
+               "duration" : {
+                  "text" : "51 mins",
+                  "value" : 3077
+               },
+               "end_address" : "Paseo de la Castellana, 93, 28046 Madrid, Madrid, Spain",
+               "end_location" : {
+                  "lat" : 40.450795,
+                  "lng" : -3.6912504
+               },
+               "start_address" : "Calle Dúrcal, 8-10, 28041 Madrid, Madrid, Spain",
+               "start_location" : {
+                  "lat" : 40.3684091,
+                  "lng" : -3.6996788
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.9 km",
+                        "value" : 864
+                     },
+                     "duration" : {
+                        "text" : "11 mins",
+                        "value" : 632
+                     },
+                     "end_location" : {
+                        "lat" : 40.3699938,
+                        "lng" : -3.6941721
+                     },
+                     "html_instructions" : "Walk to San Fermín - Orcasur",
+                     "polyline" : {
+                        "points" : "qmkuF~qqUC@CBGHCDCDCRCDABCBC@CTa@Io@Ii@IQA]GQCSEUEe@Ga@GEAa@EMCkAO[EDaE?g@Bu@LkJ?u@DmBB{ADo@Dg@VClCQ@XUyA"
+                     },
+                     "start_location" : {
+                        "lat" : 40.3684091,
+                        "lng" : -3.6996788
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "47 m",
+                              "value" : 47
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 32
+                           },
+                           "end_location" : {
+                              "lat" : 40.3686405,
+                              "lng" : -3.700112599999999
+                           },
+                           "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e toward \u003cb\u003eAv. Orcasur\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "qmkuF~qqUC@CBGHCDCDCRCDABCBC@CT"
+                           },
+                           "start_location" : {
+                              "lat" : 40.3684091,
+                              "lng" : -3.6996788
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.3 km",
+                              "value" : 261
+                           },
+                           "duration" : {
+                              "text" : "3 mins",
+                              "value" : 185
+                           },
+                           "end_location" : {
+                              "lat" : 40.3709514,
+                              "lng" : -3.699584199999999
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eAv. Orcasur\u003c/b\u003e",
+                           "maneuver" : "turn-right",
+                           "polyline" : {
+                              "points" : "_okuFttqUa@Io@Ii@IQA]GQCSEUEe@Ga@GEAa@EMCkAO[E"
+                           },
+                           "start_location" : {
+                              "lat" : 40.3686405,
+                              "lng" : -3.700112599999999
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.4 km",
+                              "value" : 423
+                           },
+                           "duration" : {
+                              "text" : "5 mins",
+                              "value" : 302
+                           },
+                           "end_location" : {
+                              "lat" : 40.3707175,
+                              "lng" : -3.6945998
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eAv. de los Poblados\u003c/b\u003e",
+                           "maneuver" : "turn-right",
+                           "polyline" : {
+                              "points" : "m}kuFjqqUDaE?g@Bu@LkJ?u@DmBB{ADo@Dg@"
+                           },
+                           "start_location" : {
+                              "lat" : 40.3709514,
+                              "lng" : -3.699584199999999
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "93 m",
+                              "value" : 93
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 73
+                           },
+                           "end_location" : {
+                              "lat" : 40.3698793,
+                              "lng" : -3.6946218
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eAv. de Andalucía\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                           "maneuver" : "turn-right",
+                           "polyline" : {
+                              "points" : "_|kuFfrpUVClCQ@X"
+                           },
+                           "start_location" : {
+                              "lat" : 40.3707175,
+                              "lng" : -3.6945998
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "40 m",
+                              "value" : 40
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 40
+                           },
+                           "end_location" : {
+                              "lat" : 40.3699938,
+                              "lng" : -3.6941721
+                           },
+                           "polyline" : {
+                              "points" : "wvkuFjrpUUyA"
+                           },
+                           "start_location" : {
+                              "lat" : 40.3698793,
+                              "lng" : -3.6946218
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "7.2 km",
+                        "value" : 7164
+                     },
+                     "duration" : {
+                        "text" : "17 mins",
+                        "value" : 1035
+                     },
+                     "end_location" : {
+                        "lat" : 40.4234137,
+                        "lng" : -3.7111998
+                     },
+                     "html_instructions" : "Subway towards Moncloa",
+                     "polyline" : {
+                        "points" : "mwkuFpopUFt@cJdBwQbDi@LODUFef@`IuOtBu@Jy@VoRrE}@KaAi@mH{LiBcCgCwC[YEE_Ai@aAMuBMcBIWC_@AYAQAS?a@?e@?a@Ai@Cy@EMAuEYmHa@uBMMAOA[GSCUGOCSCYCk@Ek@CC?{@EwAIkAGu@Es@EOASCUEQGICMEECKGEAIGeAq@IEECGCMCMCMCM?K@G?G@KBGBIDIDIDEBCBGFEFGHEFEFABCFCFADCHCHAHADAJAFALAD?HAFC\\GhAItA[pF?PANAZA`@?Z?`@?J@X@`@BX@TBVBTBPDT@JBPLp@Jl@@LBJ@PBP@L@R@P?J?J?D?N?J?J?LCTAXCXCJALCLCLCLELCLCHCFELCHGLEHCFCDEHEHEHGHGHIHEFCBIHA@CDIFGDMLu@h@CBGDGBGDIDIDKDGBIBMBKBQDM@M@U@W?A?I?E?KAMAMCIASEKEICMEGCKGOIKIMIECKIGGECaAu@kA{@aAu@KIIGKIGEIEKIIEKEICMCG?KAK?K@I@I@KDC?CBGBE@A@GDA@KHCBEDMLCBQLEFGFGFEFA@GFEHGFEHGHEFINGJGJMNCDGJEDGFEFGDGFEDGDGDGDGDGBEBGBEBGBEBMDMDG@G@OBWDWBWDuD^i@FuAN_CVcCVm@FaFh@o@Hk@FwANwANG?G@G@OBE@G@GBG@GBE@GBGBMHKDA@m@\\s@`@_Ah@sAv@[RWLKFMF[Pc@TULKH{@j@y@h@KHGBMHGBOHMFOFQHKDKFGDGDEBIDIFGFIDMJGFIFEDIHQNOPGHOPILEDILKLCFILEFKRUb@Q\\c@t@MTGL}@`BMTA@CFOVQ`@MVQb@O\\O\\KVaAdCu@nBGLEHGNEHEFEFA@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.3699938,
+                        "lng" : -3.6941721
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 40.4234137,
+                              "lng" : -3.7111998
+                           },
+                           "name" : "Plaza de España"
+                        },
+                        "arrival_time" : {
+                           "text" : "4:05pm",
+                           "time_zone" : "Europe/Madrid",
+                           "value" : 1466172314
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 40.3699938,
+                              "lng" : -3.6941721
+                           },
+                           "name" : "San Fermín - Orcasur"
+                        },
+                        "departure_time" : {
+                           "text" : "3:47pm",
+                           "time_zone" : "Europe/Madrid",
+                           "value" : 1466171279
+                        },
+                        "headsign" : "Moncloa",
+                        "headway" : 300,
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "Información oficial: Consorcio Regional de Transportes de Madrid",
+                                 "url" : "http://www.crtm.es/"
+                              }
+                           ],
+                           "color" : "#ffc400",
+                           "name" : "Villaverde Alto-Moncloa",
+                           "short_name" : "3",
+                           "text_color" : "#000000",
+                           "url" : "http://www.crtm.es/datos_lineas/esquemas/4003.pdf",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw2/6/subway2.png",
+                              "local_icon" : "//maps.gstatic.com/mapfiles/transit/iw2/6/es-madrid-metro.png",
+                              "name" : "Subway",
+                              "type" : "SUBWAY"
+                           }
+                        },
+                        "num_stops" : 10
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 147
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 147
+                     },
+                     "end_location" : {
+                        "lat" : 40.42408950000001,
+                        "lng" : -3.709698099999999
+                     },
+                     "html_instructions" : "Walk to Plaza de España",
+                     "polyline" : {
+                        "points" : "ievuF~ysUgCkH"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4234137,
+                        "lng" : -3.7111998
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.1 km",
+                              "value" : 147
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 147
+                           },
+                           "end_location" : {
+                              "lat" : 40.42408950000001,
+                              "lng" : -3.709698099999999
+                           },
+                           "polyline" : {
+                              "points" : "ievuF~ysUgCkH"
+                           },
+                           "start_location" : {
+                              "lat" : 40.4234137,
+                              "lng" : -3.7111998
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "4.0 km",
+                        "value" : 4026
+                     },
+                     "duration" : {
+                        "text" : "8 mins",
+                        "value" : 471
+                     },
+                     "end_location" : {
+                        "lat" : 40.4515849,
+                        "lng" : -3.6903752
+                     },
+                     "html_instructions" : "Subway towards Tres Olivos",
+                     "polyline" : {
+                        "points" : "qivuFrpsUBCEOk@cBCKGQEQEQEUCM?AEWEYCSAQCSAM?GAUAO?QAO?Q?a@?m@?e@?]AY?G?MAOAU?OCWAQCSAQESAKAKCKAKCKCKESKa@ESQq@[mASy@_@yAMi@Mg@G[Qo@[kAGWGQI][mACMGSCMGUG]YkAmDkNEQCKCKEOCMGSGSEKCIIQAEEIEIEKGKKOEIEGEECECECCCCEEACIKAAAAEECCAAA?AA?AA?iAoAWYa@e@IIW[QQIKKKKKKKKMKMSSKMMMOQ_@a@SSe@c@[]SUc@e@MOSUW]W[W][c@W_@IMW_@[e@aA}AGKIKIKMQGIEECEIIIKKIIGIIECECKIIGKEECKEKGEAKEKCQGSESCKCMAYAQAM?aA?wA?a@?sA?yCA{A?uEAC?iBAY?Q@U@UBOBOBWFWFGBcAXuA`@uA`@QDWHYDSBK@M@K@S@YAM?MASAKCMAQEYIQG]MOEUIKAOEKAOCWAUCqI_@yAImBIoCMyAGYAwLk@gAEyAIyAGyAGsDQw@EDmA"
+                     },
+                     "start_location" : {
+                        "lat" : 40.42408950000001,
+                        "lng" : -3.709698099999999
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 40.4515849,
+                              "lng" : -3.6903752
+                           },
+                           "name" : "Santiago Bernabeu"
+                        },
+                        "arrival_time" : {
+                           "text" : "4:21pm",
+                           "time_zone" : "Europe/Madrid",
+                           "value" : 1466173292
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 40.42408950000001,
+                              "lng" : -3.709698099999999
+                           },
+                           "name" : "Plaza de España"
+                        },
+                        "departure_time" : {
+                           "text" : "4:13pm",
+                           "time_zone" : "Europe/Madrid",
+                           "value" : 1466172821
+                        },
+                        "headsign" : "Tres Olivos",
+                        "headway" : 360,
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "Información oficial: Consorcio Regional de Transportes de Madrid",
+                                 "url" : "http://www.crtm.es/"
+                              }
+                           ],
+                           "color" : "#01579b",
+                           "name" : "Hospital Infanta Sofía-Puerta del Sur",
+                           "short_name" : "10",
+                           "text_color" : "#ffffff",
+                           "url" : "http://www.crtm.es/datos_lineas/esquemas/4010.pdf",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw2/6/subway2.png",
+                              "local_icon" : "//maps.gstatic.com/mapfiles/transit/iw2/6/es-madrid-metro.png",
+                              "name" : "Subway",
+                              "type" : "SUBWAY"
+                           }
+                        },
+                        "num_stops" : 5
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 158
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 132
+                     },
+                     "end_location" : {
+                        "lat" : 40.450795,
+                        "lng" : -3.6912504
+                     },
+                     "html_instructions" : "Walk to Paseo de la Castellana, 93, 28046 Madrid, Madrid, Spain",
+                     "polyline" : {
+                        "points" : "ku{uFzwoULxD@[T@D@nBJ"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4515849,
+                        "lng" : -3.6903752
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "79 m",
+                              "value" : 79
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 79
+                           },
+                           "end_location" : {
+                              "lat" : 40.4515106,
+                              "lng" : -3.6913076
+                           },
+                           "polyline" : {
+                              "points" : "ku{uFzwoULxD"
+                           },
+                           "start_location" : {
+                              "lat" : 40.4515849,
+                              "lng" : -3.6903752
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "79 m",
+                              "value" : 79
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 53
+                           },
+                           "end_location" : {
+                              "lat" : 40.450795,
+                              "lng" : -3.6912504
+                           },
+                           "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003ePaseo de la Castellana\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                           "polyline" : {
+                              "points" : "}t{uFt}oU@[T@D@nBJ"
+                           },
+                           "start_location" : {
+                              "lat" : 40.4515106,
+                              "lng" : -3.6913076
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "qmkuF~qqUSTMb@GDCTa@IyASo@IaBWwASgBUDiFVeQHkCDg@VClCQ@XUyAFt@{\\hGy@R{f@hIkQ`Cy@VoRrE}@KaAi@mH{LiBcCcDqDeAo@wD[uDQmBAsCMgSkAuAUc@GeAIcESeEUi@I[Ke@S_BcAUG[Gi@Bg@R[TY`@KXKb@Gf@u@bNCzBF`BLtAXdBRxAHdA?l@Cz@KlAQv@g@vAUb@_@d@STuAdA[Rg@Tu@P[Bm@@]Ay@Mk@Su@e@{FkEg@]k@Ym@Ek@JUHWRcA`Aq@~@g@v@Y^{@r@[Ni@Rw@LoGp@}WrCoBRe@J]Jc@TcIrEaB~@iCbBmB~@iAv@a@^y@|@eA`BoDtGs@xA}@vBeClGYh@A@gCkHBCq@sBK]UgAOgAG{@EgAAuEGmAMkAc@}B{FiUiFcTYeAUm@w@sAc@k@aFqFmBuBuBwByAaBcB{BuAsB}AaC_@g@i@g@a@[g@Wi@SeAUgAE_VCcCAg@BmARyHxBgALgA@{@I{Ae@aAWiAK}g@}BaMk@w@EDmALxD@[ZBnBJ"
+         },
+         "summary" : "",
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
