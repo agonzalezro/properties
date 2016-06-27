@@ -7,8 +7,8 @@ Compilation
 -----------
 
     mix escript.build
-    
-    
+
+
 Prereqs
 -------
 
@@ -48,5 +48,4 @@ TODO
 ----
 
 - Directly send (and update!) the properties to CartoDB.
-- Have some fun with the tests.
 - Fix (ask) some of the TODOs.
