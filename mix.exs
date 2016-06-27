@@ -33,7 +33,8 @@ defmodule Properties.Mixfile do
       {:httpotion, "~> 2.2.0"},
       {:csvlixir, "~> 2.0.3"},
       {:exconstructor, "~> 1.0.2"},
-      {:credo, "~> 0.4", only: [:dev, :test]}
+      {:credo, "~> 0.4", only: [:dev, :test]},
+      {:mock, "~> 0.1.1", only: :test}
     ]
   end
 end

@@ -1,4 +1,7 @@
 defmodule Google.RealClient do
+
+  @url "https://maps.googleapis.com/maps/api/directions/json"
+
   def params(destination) do
     %{
       origin: Application.get_env(:properties, :origin),
@@ -15,7 +18,7 @@ defmodule Google.RealClient do
 end
 
 defmodule Google.TestClient do
-  def directions_to(destination) do
+  def directions_to(_destination) do
     File.read! "test/fixtures/google_directions_200.json"
   end
 end
@@ -24,8 +27,6 @@ defmodule Google do
   @client Application.get_env :properties, :client
 
   @moduledoc "Module to interact with Google Directions API."
-
-  @url "https://maps.googleapis.com/maps/api/directions/json"
 
   def commute_time(latitude, longitude) do
     destination = "#{latitude},#{longitude}"

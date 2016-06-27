@@ -3,7 +3,7 @@ defmodule Properties do
   @moduledoc "Grab Idealista properties, add some data to them and export them in CSV format."
 
   def main(_args) do
-    Idealista.auth
+    Idealista.bearer
     |> Idealista.properties
     |> Enum.filter(&filter_by_parking/1)
     |> Enum.map(&add_commute_time/1)

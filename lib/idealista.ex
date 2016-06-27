@@ -21,24 +21,26 @@ defmodule Property do
   use ExConstructor
 
   def has_garage(p) do
-    p.parkingSpace.hasParkingSpace && p.parkingSpace.isParkingSpaceIncludedInPrice
+    p.parkingSpace[:hasParkingSpace] && p.parkingSpace[:isParkingSpaceIncludedInPrice]
   end
 end
 
 
-defmodule Idealista do
+defmodule Idealista.Client do
 
-  @moduledoc "Module to interact with Idealist API."
-
-  @urls %{
-    auth: "https://api.idealista.com/oauth/token",
-    search: "https://api.idealista.com/3.5/es/search"
-  }
+  @auth_url "https://api.idealista.com/oauth/token"
+  @search_url "https://api.idealista.com/3.5/es/search"
 
   @auth_params %{
     grant_type: "client_credentials",
     scope: "read"
   }
+
+  def auth_headers(bearer) do
+    [
+      headers: ["Authorization": "Bearer #{bearer}"]
+    ]
+  end
 
   def credentials do
     # TODO: this should be part of app config
@@ -54,7 +56,7 @@ defmodule Idealista do
   end
 
   def auth do
-    resp = HTTPotion.post "#{@urls.auth}?#{URI.encode_query @auth_params}", [
+    resp = HTTPotion.post "#{@auth_url}?#{URI.encode_query @auth_params}", [
       headers: ["Authorization": "Basic #{credentials}",
                 "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"]
     ]
@@ -62,15 +64,33 @@ defmodule Idealista do
     bearer
   end
 
+  def search(bearer, filter_params) do
+    HTTPotion.post("#{@search_url}?#{URI.encode_query filter_params}", auth_headers(bearer)).body
+  end
+end
+
+defmodule Idealista.FakeClient do
+
+  def search(_bearer, _filter_params) do
+    File.read! "test/fixtures/idealista_search_200.json"
+  end
+end
+
+defmodule Idealista do
+
+  @moduledoc "Module to interact with Idealist API."
+
+  @client Application.get_env(:properties, :idealista_client)
+
+  def bearer do
+    @client.auth
+  end
+
   def properties(bearer) do
     properties(bearer, 1, 0, [])
   end
 
   def properties(bearer, page, number_of_pages, acc) do
-    auth_headers = [
-      headers: ["Authorization": "Bearer #{bearer}"]
-    ]
-
     case {bearer, page, number_of_pages, acc} do
       {_, _, _, acc} when number_of_pages > 0 and page + 1 > number_of_pages ->
         acc
@@ -79,7 +99,7 @@ defmodule Idealista do
         filter_params = filter_params |> Map.put(:numPage, page)
 
         %{"totalPages" => number_of_pages, "elementList" => raw_properties} =
-          HTTPotion.post("#{@urls.search}?#{URI.encode_query filter_params}", auth_headers).body
+          @client.search(bearer, filter_params)
           |> Poison.decode!
 
         raw_properties = properties(bearer, page + 1, number_of_pages, raw_properties ++ acc)

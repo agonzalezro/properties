@@ -6,7 +6,7 @@ config :properties,
     operation: "sale",
     propertyType: "homes",
     center: "40.4511,-3.6915",
-    distance: 15_000,
+    distance: 20_000,
     maxItems: 50,
     maxPrice: 230_000,
     minPrice: 100_000,
@@ -16,7 +16,8 @@ config :properties,
     flat: true,
     bedrooms: 3,
     bathrooms: 2,
-    garage: true
+    garage: true,
+    since_date: "M"
   },
 
   # Jobandtalent office
@@ -25,6 +26,9 @@ config :properties,
   # 40 minutes
   max_commute_time: 2400,
 
-  client: Google.RealClient
+  # TODO: move to Google namespace or to google_client
+  client: Google.RealClient,
+
+  idealista_client: Idealista.Client
 
 import_config "#{Mix.env}.exs"
