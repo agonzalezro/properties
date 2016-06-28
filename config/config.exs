@@ -17,7 +17,7 @@ config :properties,
     bedrooms: 3,
     bathrooms: 2,
     garage: true,
-    since_date: "M"
+    sinceDate: "M"
   },
 
   # Jobandtalent office
