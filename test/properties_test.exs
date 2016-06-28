@@ -27,6 +27,6 @@ defmodule PropertiesTest do
 
   test "csv exporter" do
     p = Property.new(address: "something")
-    assert capture_io(fn -> to_csv([p]) end) == "address,bathrooms,commute_time,floor,latitude,longitude,newDevelopment,price,priceByArea,rooms,size,thumbnail,url\nsomething,0,0,0,0.0,0.0,false,0,0,0,0,,\n"
+    assert capture_io(fn -> to_csv([p]) end) == "address,bathrooms,commute_time,floor,latitude,longitude,newDevelopment,price,priceByArea,propertyCode,rooms,size,thumbnail,url\nsomething,0,0,0,0.0,0.0,false,0,0,,0,0,,\n"
   end
 end

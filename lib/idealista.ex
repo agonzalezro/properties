@@ -2,7 +2,8 @@ defmodule Property do
 
   @moduledoc "Struct to shape the data of a property."
 
-  defstruct address: "",
+  defstruct propertyCode: "",
+    address: "",
     bathrooms: 0,
     floor: 0,
     latitude: 0.0,
