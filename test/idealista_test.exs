@@ -6,14 +6,17 @@ defmodule Property.Test do
   import Property
 
   test "has_garage" do
-    property = Property.new(parkingSpace: %{"hasParkingSpace" => false, "isParkingSpaceIncludedInPrice" => false})
-    assert has_garage(property) == false
+    newProperty = fn a, b -> Property.new(parkingSpace: %{"hasParkingSpace" => a, "isParkingSpaceIncludedInPrice" => b}) end
 
-    property = Property.new(parkingSpace: %{"hasParkingSpace" => false, "isParkingSpaceIncludedInPrice" => true})
-    assert has_garage(property) == false
+    cases = [
+      {newProperty.(false, false), false},
+      {newProperty.(false, true), false},
+      {newProperty.(true, false), false},
+      {newProperty.(true, true), true}
+    ]
 
-    property = Property.new(parkingSpace: %{"hasParkingSpace" => true, "isParkingSpaceIncludedInPrice" => true})
-    assert has_garage(property) == true
+    cases
+    |> Enum.each(fn(case) -> assert has_garage(elem(case, 0)) == elem(case, 1) end)
   end
 end
 
