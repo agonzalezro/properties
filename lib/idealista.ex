@@ -15,17 +15,19 @@ defmodule Property do
     size: 0,
     thumbnail: "",
     url: "",
-    parkingSpace: %{hasParkingSpace: false, isParkingSpaceIncludedInPrice: false},
+    parkingSpace: %{"hasParkingSpace" => false, "isParkingSpaceIncludedInPrice" => false},
 
     commute_time: 0
 
   use ExConstructor
 
   def has_garage(p) do
-    p.parkingSpace[:hasParkingSpace] && p.parkingSpace[:isParkingSpaceIncludedInPrice]
+    # TODO: from poison we get things like %{"hasParkingSpace" => false} which
+    # seems to be different from %{hasParkingSpace: flase} in ExConstructor
+    # constructor ¯\_(ツ)_/¯
+    p.parkingSpace["hasParkingSpace"] && p.parkingSpace["isParkingSpaceIncludedInPrice"]
   end
 end
-
 
 defmodule Idealista.Client do
 

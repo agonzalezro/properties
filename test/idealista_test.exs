@@ -6,13 +6,13 @@ defmodule Property.Test do
   import Property
 
   test "has_garage" do
-    property = Property.new(parkingSpace: %{hasParkingSpace: false, isParkingSpaceIncludedInPrice: false})
+    property = Property.new(parkingSpace: %{"hasParkingSpace" => false, "isParkingSpaceIncludedInPrice" => false})
     assert has_garage(property) == false
 
-    property = Property.new(parkingSpace: %{hasParkingSpace: false, isParkingSpaceIncludedInPrice: true})
+    property = Property.new(parkingSpace: %{"hasParkingSpace" => false, "isParkingSpaceIncludedInPrice" => true})
     assert has_garage(property) == false
 
-    property = Property.new(parkingSpace: %{hasParkingSpace: true, isParkingSpaceIncludedInPrice: true})
+    property = Property.new(parkingSpace: %{"hasParkingSpace" => true, "isParkingSpaceIncludedInPrice" => true})
     assert has_garage(property) == true
   end
 end
