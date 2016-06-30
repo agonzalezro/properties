@@ -27,6 +27,13 @@ defmodule PropertiesTest do
 
   test "csv exporter" do
     p = Property.new(address: "something")
-    assert capture_io(fn -> to_csv([p]) end) == "address,bathrooms,commute_time,floor,latitude,longitude,newDevelopment,price,priceByArea,propertyCode,rooms,size,thumbnail,url\nsomething,0,0,0,0.0,0.0,false,0,0,,0,0,,\n"
+
+    expected_lines = [
+      "address,bathrooms,commute_time,floor,latitude,longitude,newDevelopment,price,priceByArea,propertyCode,rooms,size,thumbnail,url",
+      "something,0,0,0,0.0,0.0,false,0,0,,0,0,,",
+      ""
+    ]
+
+    assert capture_io(fn -> to_csv([p]) end) == expected_lines |> Enum.join("\n")
   end
 end
