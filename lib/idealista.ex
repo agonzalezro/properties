@@ -48,8 +48,8 @@ defmodule Idealista.Client do
   def credentials do
     # TODO: this should be part of app config
     # but I don't know how to fallback to env var from there
-    apikey = System.get_env "IDEALISTA_APIKEY"
-    secret = System.get_env "IDEALISTA_SECRET"
+    apikey = Application.get_env(:properties, :idealista_apikey)
+    secret = Application.get_env(:properties, :idealista_secret)
     encoded = Base.encode64("#{apikey}:#{secret}")
     unless apikey && secret do
       IO.puts "You must set IDEALISTA_APIKEY & IDEALISTA_SECRET"
@@ -72,7 +72,7 @@ defmodule Idealista.Client do
   end
 end
 
-defmodule Idealista.FakeClient do
+defmodule Idealista.TestClient do
 
   def search(_bearer, _filter_params) do
     File.read! "test/fixtures/idealista_search_200.json"

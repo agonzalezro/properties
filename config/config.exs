@@ -28,7 +28,10 @@ config :properties,
 
   # TODO: move to Google namespace or to google_client
   client: Google.RealClient,
+  google_apikey: System.get_env("GOOGLE_APIKEY"),
 
-  idealista_client: Idealista.Client
+  idealista_client: Idealista.Client,
+  idealista_apikey: System.get_env("IDEALISTA_APIKEY"),
+  idealista_secret: System.get_env("IDEALISTA_SECRET")
 
 import_config "#{Mix.env}.exs"

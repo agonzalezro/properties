@@ -27,8 +27,6 @@ defmodule Idealista.Client.Test do
   import Mock
 
   setup do
-    System.put_env "IDEALISTA_APIKEY", "key"
-    System.put_env "IDEALISTA_SECRET", "secret"
     {:ok, expected_credentials: "a2V5OnNlY3JldA=="}
   end
 

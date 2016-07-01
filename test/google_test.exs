@@ -6,10 +6,8 @@ defmodule Google.RealClient.Test do
   import Google.RealClient
 
   test "generate params with destiny" do
-    expected_google_key = "google_key"
+    expected_google_key = Application.get_env(:properties, :google_apikey)
     expected_destination = "1,2"
-
-    System.put_env "GOOGLE_APIKEY", expected_google_key
 
     params = params(expected_destination)
 

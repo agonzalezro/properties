@@ -8,7 +8,7 @@ defmodule Google.RealClient do
       destination: destination,
       mode: "transit",
       transit_mode: "subway",
-      key: System.get_env "GOOGLE_APIKEY"
+      key: Application.get_env(:properties, :google_apikey)
     }
   end
 
